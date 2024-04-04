@@ -44,10 +44,28 @@ body {
   width: 800px;
 }
 
-#project-cont{
+#project-cont {
   width: 1300px;
 }
 
-.project-card{
-  box-shadow: 8px 8px 15px gray;
+.project-card {
+  background-color: #1a1926;
+  color: #865dff;
+  height: 475px;
+  width: 400px;
+}
+
+.project-card img {
+  height: 50%;
+  width: 99%;
+  margin: 0 auto;
+}
+
+.project-card a {
+  background-color: #865dff;
+}
+
+.project-card a:hover {
+  background-color: #6f41f8;
+  transform: scale(1.001);
 }
