@@ -543,12 +543,6 @@ video {
 .h-24 {
   height: 6rem;
 }
-.h-32 {
-  height: 8rem;
-}
-.h-28 {
-  height: 7rem;
-}
 .h-8 {
   height: 2rem;
 }
@@ -625,11 +619,11 @@ video {
   font-size: 1.25rem;
   line-height: 1.75rem;
 }
-.font-semibold {
-  font-weight: 600;
-}
 .font-bold {
   font-weight: 700;
+}
+.font-semibold {
+  font-weight: 600;
 }
 .text-white {
   --tw-text-opacity: 1;
