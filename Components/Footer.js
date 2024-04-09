@@ -9,8 +9,6 @@ const Footer = () => {
       const windowHeight = window.innerHeight;
       const documentHeight = document.documentElement.scrollHeight;
       const scrollPosition = window.scrollY;
-
-      // Adjust the 100 value as needed for when you want the footer to start appearing
       if (documentHeight - windowHeight - scrollPosition < 100) {
         setShowFooter(true);
       } else {

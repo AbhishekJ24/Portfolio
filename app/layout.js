@@ -7,7 +7,7 @@ import Separator from '../Components/Separator'
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <body className="w-full">
+      <body>
         <Header />
         <Separator/>
         {children}
