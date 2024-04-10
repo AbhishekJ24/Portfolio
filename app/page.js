@@ -1,6 +1,6 @@
 "use client"
 import React from 'react';
-import "./globals.css";
+import "../app/globals.css";
 
 const page = () => {
   return (
