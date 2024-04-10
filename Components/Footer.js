@@ -1,5 +1,5 @@
 "use client"
-import "./globals.css";
+import "../app/globals.css";
 import React, { useEffect, useState } from 'react';
 
 const Footer = () => {
