@@ -6,6 +6,9 @@ const Header = () => {
   return (
     <>
       <div className='flex justify-between p-10'>
+        <div className=''>
+          <a href='/'> <img id='logo' className='invert h-12' src='logo.png' alt='not found' /> </a>
+        </div>
         <div className='flex items-center gap-12'>
           <Link className='hover:scale-110' href="/">Home</Link>
           <Link className='hover:scale-110' href='/Projects'>Projects</Link>
