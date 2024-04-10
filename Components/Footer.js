@@ -24,7 +24,7 @@ const Footer = () => {
   }, []);
 
   return (
-    <footer className={`text-center fixed bottom-0 left-0 w-full p-10 h-10 backdrop-blur-lg ${showFooter ? 'block' : 'hidden'}`}>
+    <footer className={`text-center fixed bottom-0 left-0 w-full p-10 h-10 ${showFooter ? 'block' : 'hidden'}`}>
       <p>&copy; 2024 Abhishek Joshi</p>
     </footer>
   );

@@ -47,6 +47,7 @@ const page = () => {
         <img className='h-14 rounded-lg' src='tailwind.svg' />
         <img className='h-20 rounded-lg' src='react.svg' />
         <img className='h-20 rounded-lg invert' src='next.svg' />
+        <img className='h-20 rounded-lg invert' src='express.svg' />
       </div>
     </>
   )
