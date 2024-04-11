@@ -4,15 +4,17 @@ import Link from 'next/link'
 
 const Header = () => {
   return (
-    <div className='flex justify-between p-10'>
-      <a href='/'> <img id='logo' className='invert h-12' src='logo.png' alt='not found' /> </a>
-      <div className='flex items-center gap-12'>
-        <Link className='hover:scale-110' href="/">Home</Link>
-        <Link className='hover:scale-110' href='/Projects'>Projects</Link>
-        <Link className='hover:scale-110' href='/Experience'>Experience</Link>
-        <Link className='hover:scale-110' href='/Contact'>Contact</Link>
+    <>
+      <div className='flex justify-between p-10'>
+        <a href='/'> <img id='logo' className='invert h-12' src='logo.png' alt='not found' /> </a>
+        <div className='flex items-center gap-12'>
+          <Link className='hover:scale-110' href="/">Home</Link>
+          <Link className='hover:scale-110' href='/Projects'>Projects</Link>
+          <Link className='hover:scale-110' href='/Experience'>Experience</Link>
+          <Link className='hover:scale-110' href='/Contact'>Contact</Link>
+        </div>
       </div>
-    </div>
+    </>
   )
 }
 
