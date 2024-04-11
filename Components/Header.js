@@ -5,9 +5,9 @@ import Link from 'next/link'
 const Header = () => {
   return (
     <>
-      <div className='flex justify-between p-10 h-14'>
+      <div className='flex justify-between p-10'>
         <div className=''>
-          <a href='/'> <img id='logo' className='invert h-12' src='logo.png' alt='not found' /> </a>
+          <a href='/'> <img id='logo' className='h-12' src='react.svg' alt='not found' /> </a>
         </div>
         <div className='flex items-center gap-12'>
           <Link className='hover:scale-110' href="/">Home</Link>
