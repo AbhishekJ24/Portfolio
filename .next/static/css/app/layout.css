@@ -1,9 +1,13 @@
 /*!*************************************************************************************************************************************************************************************************************************************************************!*\
   !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[11].oneOf[12].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[11].oneOf[12].use[3]!./app/globals.css ***!
   \*************************************************************************************************************************************************************************************************************************************************************/
+@import url('https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto+Slab:wght@100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
 /*
 ! tailwindcss v3.4.1 | MIT License | https://tailwindcss.com
-*//*
+*/
+
+/*
 1. Prevent padding and border from affecting element width. (https://github.com/mozdevs/cssremedy/issues/4)
 2. Allow adding a border to an element by just adding a border-width. (https://github.com/tailwindcss/tailwindcss/pull/116)
 */
@@ -319,6 +323,7 @@ menu {
 /*
 Reset default styling for dialogs.
 */
+
 dialog {
   padding: 0;
 }
@@ -359,6 +364,7 @@ button,
 /*
 Make sure disabled buttons don't get the pointer cursor.
 */
+
 :disabled {
   cursor: default;
 }
@@ -392,11 +398,12 @@ video {
 }
 
 /* Make elements with the HTML hidden attribute stay hidden by default */
+
 [hidden] {
   display: none;
 }
 
-*, ::before, ::after {
+*, ::before, ::after{
   --tw-border-spacing-x: 0;
   --tw-border-spacing-y: 0;
   --tw-translate-x: 0;
@@ -446,7 +453,7 @@ video {
   --tw-backdrop-sepia:  ;
 }
 
-::backdrop {
+::backdrop{
   --tw-border-spacing-x: 0;
   --tw-border-spacing-y: 0;
   --tw-translate-x: 0;
@@ -495,144 +502,144 @@ video {
   --tw-backdrop-saturate:  ;
   --tw-backdrop-sepia:  ;
 }
-.fixed {
+.fixed{
   position: fixed;
 }
-.bottom-0 {
+.bottom-0{
   bottom: 0px;
 }
-.left-0 {
+.left-0{
   left: 0px;
 }
-.m-2 {
+.m-2{
   margin: 0.5rem;
 }
-.m-4 {
+.m-4{
   margin: 1rem;
 }
-.mb-32 {
+.mb-32{
   margin-bottom: 8rem;
 }
-.mt-5 {
+.mt-5{
   margin-top: 1.25rem;
 }
-.flex {
+.flex{
   display: flex;
 }
-.h-10 {
+.h-10{
   height: 2.5rem;
 }
-.h-12 {
+.h-12{
   height: 3rem;
 }
-.h-14 {
+.h-14{
   height: 3.5rem;
 }
-.h-16 {
+.h-16{
   height: 4rem;
 }
-.h-20 {
+.h-20{
   height: 5rem;
 }
-.h-24 {
+.h-24{
   height: 6rem;
 }
-.h-8 {
+.h-8{
   height: 2rem;
 }
-.w-\[10rem\] {
+.w-\[10rem\]{
   width: 10rem;
 }
-.w-full {
+.w-full{
   width: 100%;
 }
-.flex-col {
+.flex-col{
   flex-direction: column;
 }
-.flex-wrap {
+.flex-wrap{
   flex-wrap: wrap;
 }
-.items-center {
+.items-center{
   align-items: center;
 }
-.justify-center {
+.justify-center{
   justify-content: center;
 }
-.justify-between {
+.justify-between{
   justify-content: space-between;
 }
-.justify-around {
+.justify-around{
   justify-content: space-around;
 }
-.gap-10 {
+.gap-10{
   gap: 2.5rem;
 }
-.gap-12 {
+.gap-12{
   gap: 3rem;
 }
-.gap-8 {
+.gap-8{
   gap: 2rem;
 }
-.overflow-y-clip {
+.overflow-y-clip{
   overflow-y: clip;
 }
-.rounded-2xl {
+.rounded-2xl{
   border-radius: 1rem;
 }
-.rounded-lg {
+.rounded-lg{
   border-radius: 0.5rem;
 }
-.object-cover {
+.object-cover{
   -o-object-fit: cover;
      object-fit: cover;
 }
-.p-10 {
+.p-10{
   padding: 2.5rem;
 }
-.p-3 {
+.p-3{
   padding: 0.75rem;
 }
-.p-5 {
+.p-5{
   padding: 1.25rem;
 }
-.text-center {
+.text-center{
   text-align: center;
 }
-.text-justify {
+.text-justify{
   text-align: justify;
 }
-.text-3xl {
+.text-3xl{
   font-size: 1.875rem;
   line-height: 2.25rem;
 }
-.text-sm {
+.text-sm{
   font-size: 0.875rem;
   line-height: 1.25rem;
 }
-.text-xl {
+.text-xl{
   font-size: 1.25rem;
   line-height: 1.75rem;
 }
-.font-bold {
+.font-bold{
   font-weight: 700;
 }
-.font-semibold {
+.font-semibold{
   font-weight: 600;
 }
-.text-white {
+.text-white{
   --tw-text-opacity: 1;
   color: rgb(255 255 255 / var(--tw-text-opacity));
 }
-.invert {
+.invert{
   --tw-invert: invert(100%);
   filter: var(--tw-blur) var(--tw-brightness) var(--tw-contrast) var(--tw-grayscale) var(--tw-hue-rotate) var(--tw-invert) var(--tw-saturate) var(--tw-sepia) var(--tw-drop-shadow);
 }
-.backdrop-blur-lg {
+.backdrop-blur-lg{
   --tw-backdrop-blur: blur(16px);
   -webkit-backdrop-filter: var(--tw-backdrop-blur) var(--tw-backdrop-brightness) var(--tw-backdrop-contrast) var(--tw-backdrop-grayscale) var(--tw-backdrop-hue-rotate) var(--tw-backdrop-invert) var(--tw-backdrop-opacity) var(--tw-backdrop-saturate) var(--tw-backdrop-sepia);
           backdrop-filter: var(--tw-backdrop-blur) var(--tw-backdrop-brightness) var(--tw-backdrop-contrast) var(--tw-backdrop-grayscale) var(--tw-backdrop-hue-rotate) var(--tw-backdrop-invert) var(--tw-backdrop-opacity) var(--tw-backdrop-saturate) var(--tw-backdrop-sepia);
 }
-.transition {
+.transition{
   transition-property: color, background-color, border-color, text-decoration-color, fill, stroke, opacity, box-shadow, transform, filter, -webkit-backdrop-filter;
   transition-property: color, background-color, border-color, text-decoration-color, fill, stroke, opacity, box-shadow, transform, filter, backdrop-filter;
   transition-property: color, background-color, border-color, text-decoration-color, fill, stroke, opacity, box-shadow, transform, filter, backdrop-filter, -webkit-backdrop-filter;
@@ -654,6 +661,12 @@ video {
     --background-start-rgb: 255, 255, 255;
     --background-end-rgb: 255, 255, 255;
   }
+}
+
+*{
+  margin: 0;
+  padding: 0;
+  font-family: "Roboto";
 }
 
 body {
@@ -701,13 +714,7 @@ body {
   background-color: #6f41f8;
 }
 
-.hover\:scale-105:hover {
-  --tw-scale-x: 1.05;
-  --tw-scale-y: 1.05;
-  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
-}
-
-.hover\:scale-110:hover {
+.hover\:scale-110:hover{
   --tw-scale-x: 1.1;
   --tw-scale-y: 1.1;
   transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
