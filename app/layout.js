@@ -8,12 +8,14 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <body>
+        <div className="body-div">
         <Header />
         <Separator/>
         {children}
         <Separator/>
         <Separator/>
         <Footer />
+        </div>
       </body>
     </html>
   );
