@@ -3,9 +3,20 @@ import React from 'react'
 
 const contact = () => {
   return (
-    <div>
-
-    </div>
+    <>
+      <div>
+        hello
+      </div>
+      <div>
+      hello
+      </div>
+      <div>
+      hello
+      </div>
+      <div>
+      hello
+      </div>
+    </>
   )
 }
 
