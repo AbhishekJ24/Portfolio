@@ -1,8 +1,8 @@
 "use client"
 import "../app/globals.css";
-import Header from '@/Components/Header'
-import Footer from '@/Components/Footer'
-import Separator from '@/Components/Separator'
+import Header from '@/app/Components/Header'
+import Footer from '@/app/Components/Footer'
+import Separator from '@/app/Components/Separator'
 
 export default function RootLayout({ children }) {
   return (

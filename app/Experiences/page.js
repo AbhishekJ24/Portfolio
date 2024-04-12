@@ -1,6 +1,6 @@
 "use client"
 import React from 'react'
-import Experience from '@/Components/Experience'
+import Experience from '@/app/Components/Experience'
 
 const Experiences = () => {
   return (
