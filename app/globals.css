@@ -20,7 +20,7 @@
   }
 }
 
-*{
+* {
   margin: 0;
   padding: 0;
   font-family: "Roboto";
@@ -53,14 +53,14 @@ body {
 }
 
 #project-cont {
-  width: 1300px;
+  width: 1200px;
 }
 
 .project-card {
   background-color: #1a1926;
   color: #865dff;
-  height: 450px;
-  width: 400px;
+  height: 400px;
+  width: 350px;
 }
 
 .project-card img {
@@ -69,10 +69,35 @@ body {
   margin: 0 auto;
 }
 
-.project-card a, .ind-btns {
+.project-card a,
+.ind-btns {
   background-color: #865dff;
 }
 
-.project-card a:hover, .ind-btns:hover {
+.project-card a:hover,
+.ind-btns:hover {
   background-color: #6f41f8;
+}
+
+
+
+.green-text-gradient {
+  background: #11998e;
+  background: linear-gradient(to top, #11998e, #38ef7d);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent
+}
+
+.blue-text-gradient {
+  background: #56ccf2;
+  background: linear-gradient(to top, #2f80ed, #56ccf2);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent
+}
+
+.pink-text-gradient {
+  background: #ec008c;
+  background: linear-gradient(to top, #ec008c, #fc6767);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent
 }

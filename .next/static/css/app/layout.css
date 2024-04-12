@@ -517,11 +517,24 @@ video {
 .m-4{
   margin: 1rem;
 }
+.mx-auto{
+  margin-left: auto;
+  margin-right: auto;
+}
 .mb-32{
   margin-bottom: 8rem;
 }
+.mt-1{
+  margin-top: 0.25rem;
+}
+.mt-2{
+  margin-top: 0.5rem;
+}
 .mt-5{
   margin-top: 1.25rem;
+}
+.block{
+  display: block;
 }
 .flex{
   display: flex;
@@ -544,6 +557,9 @@ video {
 .h-24{
   height: 6rem;
 }
+.h-48{
+  height: 12rem;
+}
 .h-8{
   height: 2rem;
 }
@@ -552,6 +568,9 @@ video {
 }
 .w-full{
   width: 100%;
+}
+.max-w-md{
+  max-width: 28rem;
 }
 .flex-col{
   flex-direction: column;
@@ -577,8 +596,14 @@ video {
 .gap-12{
   gap: 3rem;
 }
+.gap-2{
+  gap: 0.5rem;
+}
 .gap-8{
   gap: 2rem;
+}
+.overflow-hidden{
+  overflow: hidden;
 }
 .overflow-y-clip{
   overflow-y: clip;
@@ -588,6 +613,13 @@ video {
 }
 .rounded-lg{
   border-radius: 0.5rem;
+}
+.rounded-xl{
+  border-radius: 0.75rem;
+}
+.bg-white{
+  --tw-bg-opacity: 1;
+  background-color: rgb(255 255 255 / var(--tw-bg-opacity));
 }
 .object-cover{
   -o-object-fit: cover;
@@ -602,6 +634,12 @@ video {
 .p-5{
   padding: 1.25rem;
 }
+.p-8{
+  padding: 2rem;
+}
+.p-2{
+  padding: 0.5rem;
+}
 .text-center{
   text-align: center;
 }
@@ -612,6 +650,13 @@ video {
   font-size: 1.875rem;
   line-height: 2.25rem;
 }
+.text-\[0\.75rem\]{
+  font-size: 0.75rem;
+}
+.text-lg{
+  font-size: 1.125rem;
+  line-height: 1.75rem;
+}
 .text-sm{
   font-size: 0.875rem;
   line-height: 1.25rem;
@@ -620,15 +665,52 @@ video {
   font-size: 1.25rem;
   line-height: 1.75rem;
 }
+.text-xs{
+  font-size: 0.75rem;
+  line-height: 1rem;
+}
 .font-bold{
   font-weight: 700;
+}
+.font-medium{
+  font-weight: 500;
 }
 .font-semibold{
   font-weight: 600;
 }
+.uppercase{
+  text-transform: uppercase;
+}
+.leading-tight{
+  line-height: 1.25;
+}
+.tracking-wide{
+  letter-spacing: 0.025em;
+}
+.text-black{
+  --tw-text-opacity: 1;
+  color: rgb(0 0 0 / var(--tw-text-opacity));
+}
+.text-gray-500{
+  --tw-text-opacity: 1;
+  color: rgb(107 114 128 / var(--tw-text-opacity));
+}
+.text-gray-900{
+  --tw-text-opacity: 1;
+  color: rgb(17 24 39 / var(--tw-text-opacity));
+}
+.text-indigo-500{
+  --tw-text-opacity: 1;
+  color: rgb(99 102 241 / var(--tw-text-opacity));
+}
 .text-white{
   --tw-text-opacity: 1;
   color: rgb(255 255 255 / var(--tw-text-opacity));
+}
+.shadow-md{
+  --tw-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);
+  --tw-shadow-colored: 0 4px 6px -1px var(--tw-shadow-color), 0 2px 4px -2px var(--tw-shadow-color);
+  box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
 }
 .invert{
   --tw-invert: invert(100%);
@@ -663,7 +745,7 @@ video {
   }
 }
 
-*{
+* {
   margin: 0;
   padding: 0;
   font-family: "Roboto";
@@ -690,14 +772,14 @@ body {
 }
 
 #project-cont {
-  width: 1300px;
+  width: 1200px;
 }
 
 .project-card {
   background-color: #1a1926;
   color: #865dff;
-  height: 450px;
-  width: 400px;
+  height: 400px;
+  width: 350px;
 }
 
 .project-card img {
@@ -706,16 +788,58 @@ body {
   margin: 0 auto;
 }
 
-.project-card a, .ind-btns {
+.project-card a,
+.ind-btns {
   background-color: #865dff;
 }
 
-.project-card a:hover, .ind-btns:hover {
+.project-card a:hover,
+.ind-btns:hover {
   background-color: #6f41f8;
 }
 
-.hover\:scale-110:hover{
-  --tw-scale-x: 1.1;
-  --tw-scale-y: 1.1;
-  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+
+
+.green-text-gradient {
+  background: #11998e;
+  background: linear-gradient(to top, #11998e, #38ef7d);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent
+}
+
+.blue-text-gradient {
+  background: #56ccf2;
+  background: linear-gradient(to top, #2f80ed, #56ccf2);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent
+}
+
+.pink-text-gradient {
+  background: #ec008c;
+  background: linear-gradient(to top, #ec008c, #fc6767);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent
+}
+
+@media (min-width: 768px){
+
+  .md\:flex{
+    display: flex;
+  }
+
+  .md\:h-full{
+    height: 100%;
+  }
+
+  .md\:w-48{
+    width: 12rem;
+  }
+
+  .md\:max-w-2xl{
+    max-width: 42rem;
+  }
+
+  .md\:flex-shrink-0{
+    flex-shrink: 0;
+  }
 }
