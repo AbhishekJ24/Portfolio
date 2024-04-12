@@ -16,15 +16,15 @@
       "static/chunks/main-app.js",
       "static/chunks/app/Projects/page.js"
     ],
-    "/Contact/page": [
-      "static/chunks/webpack.js",
-      "static/chunks/main-app.js",
-      "static/chunks/app/Contact/page.js"
-    ],
     "/Experiences/page": [
       "static/chunks/webpack.js",
       "static/chunks/main-app.js",
       "static/chunks/app/Experiences/page.js"
+    ],
+    "/Contact/page": [
+      "static/chunks/webpack.js",
+      "static/chunks/main-app.js",
+      "static/chunks/app/Contact/page.js"
     ]
   }
 }

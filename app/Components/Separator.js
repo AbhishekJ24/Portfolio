@@ -3,7 +3,7 @@ import React from 'react'
 const Separator = () => {
   return (
     <>
-    <div className='h-8 w-full'>
+    <div className='h-4 w-full'>
     </div>
     </>
   )

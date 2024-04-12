@@ -1,5 +1,5 @@
 import React from 'react'
-import { motion } from "framer-motion"
+import Link from 'next/link'
 
 const Header = () => {
   return (
@@ -7,10 +7,10 @@ const Header = () => {
       <div className='flex justify-between p-10'>
         <a href='/'> <img id='logo' className='invert h-12' src='logo.png' alt='not found' /> </a>
         <div className='flex items-center gap-12'>
-          <motion.a whileHover={{ scale: 1.1 }} whileTap={{ scale: 1.1 }} href="/">Home</motion.a>
-          <motion.a whileHover={{ scale: 1.1 }} whileTap={{ scale: 1.1 }} href='/Projects'>Projects</motion.a>
-          <motion.a whileHover={{ scale: 1.1 }} whileTap={{ scale: 1.1 }} href='/Experiences'>Experience</motion.a>
-          <motion.a whileHover={{ scale: 1.1 }} whileTap={{ scale: 1.1 }} href='/Contact'>Contact</motion.a>
+          <Link className='hover:scale-105' href="/">Home</Link>
+          <Link className='hover:scale-105' href='/Projects'>Projects</Link>
+          <Link className='hover:scale-105' href='/Experiences'>Experience</Link>
+          <Link className='hover:scale-105' href='/Contact'>Contact</Link>
         </div>
       </div>
     </>
