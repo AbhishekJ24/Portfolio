@@ -521,6 +521,9 @@ video {
   margin-left: auto;
   margin-right: auto;
 }
+.mb-2{
+  margin-bottom: 0.5rem;
+}
 .mb-32{
   margin-bottom: 8rem;
 }
@@ -566,11 +569,17 @@ video {
 .w-\[10rem\]{
   width: 10rem;
 }
+.w-auto{
+  width: auto;
+}
 .w-full{
   width: 100%;
 }
 .max-w-md{
   max-width: 28rem;
+}
+.max-w-xl{
+  max-width: 36rem;
 }
 .flex-col{
   flex-direction: column;
@@ -637,6 +646,9 @@ video {
 .p-8{
   padding: 2rem;
 }
+.p-2{
+  padding: 0.5rem;
+}
 .text-center{
   text-align: center;
 }
@@ -698,6 +710,11 @@ video {
   --tw-invert: invert(100%);
   filter: var(--tw-blur) var(--tw-brightness) var(--tw-contrast) var(--tw-grayscale) var(--tw-hue-rotate) var(--tw-invert) var(--tw-saturate) var(--tw-sepia) var(--tw-drop-shadow);
 }
+.backdrop-blur-3xl{
+  --tw-backdrop-blur: blur(64px);
+  -webkit-backdrop-filter: var(--tw-backdrop-blur) var(--tw-backdrop-brightness) var(--tw-backdrop-contrast) var(--tw-backdrop-grayscale) var(--tw-backdrop-hue-rotate) var(--tw-backdrop-invert) var(--tw-backdrop-opacity) var(--tw-backdrop-saturate) var(--tw-backdrop-sepia);
+          backdrop-filter: var(--tw-backdrop-blur) var(--tw-backdrop-brightness) var(--tw-backdrop-contrast) var(--tw-backdrop-grayscale) var(--tw-backdrop-hue-rotate) var(--tw-backdrop-invert) var(--tw-backdrop-opacity) var(--tw-backdrop-saturate) var(--tw-backdrop-sepia);
+}
 .backdrop-blur-lg{
   --tw-backdrop-blur: blur(16px);
   -webkit-backdrop-filter: var(--tw-backdrop-blur) var(--tw-backdrop-brightness) var(--tw-backdrop-contrast) var(--tw-backdrop-grayscale) var(--tw-backdrop-hue-rotate) var(--tw-backdrop-invert) var(--tw-backdrop-opacity) var(--tw-backdrop-saturate) var(--tw-backdrop-sepia);
@@ -717,6 +734,29 @@ video {
   --background-end-rgb: 0, 0, 0;
 }
 
+@media (max-width: 768px) {
+  #name {
+    font-size: 75px;
+  }
+  #nav-links-lap{
+    display: none;
+  }
+  #nav-links-mob{
+    background-color: #1a1926;
+  }
+  .n-li:hover{
+    color: #865dff;
+  }
+}
+@media (min-width: 768px) {
+  #name {
+    font-size: 100px;
+  }
+  #nav-links-mob{
+    display: none;
+  }
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -731,7 +771,6 @@ body {
 }
 
 #name {
-  font-size: 100px;
   background: linear-gradient(90deg, #9845E8 -1.72%, #33D2FF 54.05%, #DD5789 99.78%);
   background-clip: text;
   -webkit-background-clip: text;
@@ -739,8 +778,8 @@ body {
   font-weight: 600;
 }
 
-#introduction {
-  width: 800px;
+#introduction{
+  width: 75%;
 }
 
 #project-cont {

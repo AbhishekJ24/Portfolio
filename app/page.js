@@ -1,22 +1,15 @@
-"use client" 
 import React from 'react';
 
-
-const page = () => {
+const Page = () => {
   return (
     <>
       <div className='flex justify-center'>
-
-        <div id='introduction' className='text-justify'>
+        <div id='introduction' className='text-justify w-full max-w-xl'>
           <div className='font-semibold text-3xl m'>
-            <span>
-              Hey, I'm
-            </span>
+            <span>Hey, I'm</span>
           </div>
           <div className=''>
-            <span id='name'>
-              Abhishek Joshi
-            </span>
+            <span id='name'>Abhishek Joshi</span>
           </div>
           <div className='text-xl' id='about'>
             <p>Currently in my pre-final year of my bachelor's degree. Always eager to deepen my technical
@@ -35,23 +28,22 @@ const page = () => {
           </div>
         </div>
       </div>
-      <div className='h-20'>
-      </div>
+      <div className='h-20'></div>
       <div className='m-2 flex justify-center gap-8 items-center'>
-        <img className='h-24 rounded-lg' src='java.svg' />
-        <img className='h-24 rounded-lg' src='python.svg' />
-        <img className='h-16 rounded-lg' src='sklearn.svg' />
-        <img className='h-20 rounded-lg' src='pytorch.svg' />
+        <img className='h-24 w-auto rounded-lg' src='java.svg' />
+        <img className='h-24 w-auto rounded-lg' src='python.svg' />
+        <img className='h-16 w-auto rounded-lg' src='sklearn.svg' />
+        <img className='h-20 w-auto rounded-lg' src='pytorch.svg' />
       </div>
       <div className='m-4 flex justify-center gap-8 items-center mb-32'>
-        <img className='h-20 rounded-lg' src='javascript.svg' />
-        <img className='h-14 rounded-lg' src='tailwind.svg' />
-        <img className='h-20 rounded-lg' src='react.svg' />
-        <img className='h-20 rounded-lg invert' src='next.svg' />
-        <img className='h-20 rounded-lg invert' src='express.svg' />
+        <img className='h-20 w-auto rounded-lg' src='javascript.svg' />
+        <img className='h-14 w-auto rounded-lg' src='tailwind.svg' />
+        <img className='h-20 w-auto rounded-lg' src='react.svg' />
+        <img className='h-20 w-auto rounded-lg invert' src='next.svg' />
+        <img className='h-20 w-auto rounded-lg invert' src='express.svg' />
       </div>
     </>
   )
 }
 
-export default page
+export default Page;
