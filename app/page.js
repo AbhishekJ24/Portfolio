@@ -28,19 +28,16 @@ const Page = () => {
           </div>
         </div>
       </div>
-      <div className='h-20'></div>
-      <div className='m-2 flex justify-center gap-8 items-center'>
-        <img className='h-24 w-auto rounded-lg' src='java.svg' />
-        <img className='h-24 w-auto rounded-lg' src='python.svg' />
+      <div className='mt-10 m-2 flex flex-wrap justify-center gap-8 items-center'>
+        <img className='h-16 w-auto rounded-lg' src='java.svg' />
+        <img className='h-16 w-auto rounded-lg' src='python.svg' />
         <img className='h-16 w-auto rounded-lg' src='sklearn.svg' />
-        <img className='h-20 w-auto rounded-lg' src='pytorch.svg' />
-      </div>
-      <div className='m-4 flex justify-center gap-8 items-center mb-32'>
-        <img className='h-20 w-auto rounded-lg' src='javascript.svg' />
-        <img className='h-14 w-auto rounded-lg' src='tailwind.svg' />
-        <img className='h-20 w-auto rounded-lg' src='react.svg' />
-        <img className='h-20 w-auto rounded-lg invert' src='next.svg' />
-        <img className='h-20 w-auto rounded-lg invert' src='express.svg' />
+        <img className='h-16 w-auto rounded-lg' src='pytorch.svg' />
+        <img className='h-16 w-auto rounded-lg' src='javascript.svg' />
+        <img className='h-16 w-auto rounded-lg' src='tailwind.svg' />
+        <img className='h-16 w-auto rounded-lg' src='react.svg' />
+        <img className='h-16 w-auto rounded-lg invert' src='next.svg' />
+        <img className='h-16 w-auto rounded-lg invert' src='express.svg' />
       </div>
     </>
   )

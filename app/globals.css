@@ -10,10 +10,7 @@
   --background-end-rgb: 0, 0, 0;
 }
 
-@media (max-width: 768px) {
-  #name {
-    font-size: 75px;
-  }
+@media (max-width: 692px) {
   #nav-links-lap{
     display: none;
   }
@@ -24,10 +21,7 @@
     color: #865dff;
   }
 }
-@media (min-width: 768px) {
-  #name {
-    font-size: 100px;
-  }
+@media (min-width: 692px) {
   #nav-links-mob{
     display: none;
   }
@@ -53,6 +47,7 @@ body {
 }
 
 #name {
+  font-size: 5rem;
   background: linear-gradient(90deg, #9845E8 -1.72%, #33D2FF 54.05%, #DD5789 99.78%);
   background-clip: text;
   -webkit-background-clip: text;
@@ -62,6 +57,10 @@ body {
 
 #introduction{
   width: 75%;
+}
+
+#stack{
+  width: 50%;
 }
 
 #project-cont {

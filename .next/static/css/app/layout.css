@@ -514,9 +514,6 @@ video {
 .m-2{
   margin: 0.5rem;
 }
-.m-4{
-  margin: 1rem;
-}
 .mx-auto{
   margin-left: auto;
   margin-right: auto;
@@ -524,11 +521,11 @@ video {
 .mb-2{
   margin-bottom: 0.5rem;
 }
-.mb-32{
-  margin-bottom: 8rem;
-}
 .mt-1{
   margin-top: 0.25rem;
+}
+.mt-10{
+  margin-top: 2.5rem;
 }
 .mt-5{
   margin-top: 1.25rem;
@@ -565,6 +562,12 @@ video {
 }
 .h-48{
   height: 12rem;
+}
+.h-40{
+  height: 10rem;
+}
+.h-60{
+  height: 15rem;
 }
 .w-\[10rem\]{
   width: 10rem;
@@ -645,9 +648,6 @@ video {
 }
 .p-8{
   padding: 2rem;
-}
-.p-2{
-  padding: 0.5rem;
 }
 .text-center{
   text-align: center;
@@ -734,10 +734,7 @@ video {
   --background-end-rgb: 0, 0, 0;
 }
 
-@media (max-width: 768px) {
-  #name {
-    font-size: 75px;
-  }
+@media (max-width: 692px) {
   #nav-links-lap{
     display: none;
   }
@@ -748,10 +745,7 @@ video {
     color: #865dff;
   }
 }
-@media (min-width: 768px) {
-  #name {
-    font-size: 100px;
-  }
+@media (min-width: 692px) {
   #nav-links-mob{
     display: none;
   }
@@ -771,6 +765,7 @@ body {
 }
 
 #name {
+  font-size: 5rem;
   background: linear-gradient(90deg, #9845E8 -1.72%, #33D2FF 54.05%, #DD5789 99.78%);
   background-clip: text;
   -webkit-background-clip: text;
@@ -780,6 +775,10 @@ body {
 
 #introduction{
   width: 75%;
+}
+
+#stack{
+  width: 50%;
 }
 
 #project-cont {
