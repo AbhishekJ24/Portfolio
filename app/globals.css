@@ -58,19 +58,12 @@ body {
 height: 50px;
 }
 
-.grad-text1 {
+.grad-text {
   background: linear-gradient(90deg, #9845E8 -1.72%, #33D2FF 54.05%, #DD5789 99.78%);
   background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   font-weight: 600;
-}
-
-.grad-text2{
-  background: linear-gradient(45deg, #8E24AA, #6200EA, #4A148C);
-  background-clip: text;
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
 }
 
 #project-cont {

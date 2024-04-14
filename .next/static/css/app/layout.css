@@ -502,6 +502,9 @@ video {
   --tw-backdrop-saturate:  ;
   --tw-backdrop-sepia:  ;
 }
+.visible{
+  visibility: visible;
+}
 .fixed{
   position: fixed;
 }
@@ -530,29 +533,23 @@ video {
 .mt-5{
   margin-top: 1.25rem;
 }
-.mt-7{
-  margin-top: 1.75rem;
-}
 .mt-8{
   margin-top: 2rem;
 }
-.mt-\[\]{
-  margin-top: ;
+.mb-5{
+  margin-bottom: 1.25rem;
 }
-.mt-\[20px\]{
-  margin-top: 20px;
-}
-.mt-\[1000px\]{
-  margin-top: 1000px;
-}
-.mt-6{
-  margin-top: 1.5rem;
+.mb-10{
+  margin-bottom: 2.5rem;
 }
 .block{
   display: block;
 }
 .flex{
   display: flex;
+}
+.hidden{
+  display: none;
 }
 .h-10{
   height: 2.5rem;
@@ -586,6 +583,9 @@ video {
 }
 .w-full{
   width: 100%;
+}
+.w-3\/4{
+  width: 75%;
 }
 .max-w-md{
   max-width: 28rem;
@@ -658,16 +658,15 @@ video {
 .text-center{
   text-align: center;
 }
+.text-justify{
+  text-align: justify;
+}
 .text-2xl{
   font-size: 1.5rem;
   line-height: 2rem;
 }
-.text-5xl{
-  font-size: 3rem;
-  line-height: 1;
-}
-.text-8xl{
-  font-size: 6rem;
+.text-7xl{
+  font-size: 4.5rem;
   line-height: 1;
 }
 .text-\[0\.75rem\]{
@@ -684,6 +683,18 @@ video {
 .text-xl{
   font-size: 1.25rem;
   line-height: 1.75rem;
+}
+.text-6xl{
+  font-size: 3.75rem;
+  line-height: 1;
+}
+.text-8xl{
+  font-size: 6rem;
+  line-height: 1;
+}
+.text-5xl{
+  font-size: 3rem;
+  line-height: 1;
 }
 .font-bold{
   font-weight: 700;
@@ -787,19 +798,12 @@ body {
 height: 50px;
 }
 
-.grad-text1 {
+.grad-text {
   background: linear-gradient(90deg, #9845E8 -1.72%, #33D2FF 54.05%, #DD5789 99.78%);
   background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   font-weight: 600;
-}
-
-.grad-text2{
-  background: linear-gradient(45deg, #8E24AA, #6200EA, #4A148C);
-  background-clip: text;
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
 }
 
 #project-cont {

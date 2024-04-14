@@ -6,25 +6,18 @@ const Page = () => {
   return (
     <>
       <div className='flex justify-center'>
-        <div className='justify-center w-6/12'>
-          <div className='font-semibold text-2xl'>
+        <div className='w-3/4'>
+          <div className='font-semibold text-2xl mb-5'>
             <span>Hey, I'm</span>
-          <div className='grad-text1 text-8xl'>
-            <span className='grad-text1 text-8xl'>
-              Abhishek Joshi
-            </span>
           </div>
+          <div>
 
+          <TypeAnimation className='grad-text text-8xl' sequence={[
+            'Abhishek Joshi',
+            100,
+          ]} />
           </div>
-            <TypeAnimation id='name' className='grad-text2 text-5xl' sequence={[
-              'Passionate about Coding',
-              250,
-              'Creating Memorable Designs',
-              250,
-              'Building Future Solutions',
-              250
-            ]} />
-          <div className='text-xl mt-5'>
+          <div className='text-lg mt-5 text-justify'>
             <p>Currently in my pre-final year of my bachelor's degree. Always eager to deepen my technical
               knowledge and skills. Honed proficiency in Java, Python and MERN stack while embracing problem-solving
               abilities vital to computer science.
