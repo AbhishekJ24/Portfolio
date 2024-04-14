@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto+Slab:wght@100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
 
 @tailwind base;
 @tailwind components;
@@ -10,27 +10,31 @@
   --background-end-rgb: 0, 0, 0;
 }
 
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Open Sans";
+}
+
 @media (max-width: 692px) {
   #nav-links-lap{
     display: none;
   }
   #nav-links-mob{
+    display: none;
     background-color: #1a1926;
+    position: relative;
+    top: 0;
+    right: 0;
   }
   .n-li:hover{
     color: #865dff;
   }
 }
 @media (min-width: 692px) {
-  #nav-links-mob{
+  #ham-menu{
     display: none;
   }
-}
-
-* {
-  margin: 0;
-  padding: 0;
-  font-family: "Roboto";
 }
 
 body {
@@ -46,8 +50,15 @@ body {
   }
 }
 
-#name {
-  font-size: 5rem;
+#nav-links-mob{
+  display: none;
+}
+
+#ham-menu img{
+height: 50px;
+}
+
+.grad-text1 {
   background: linear-gradient(90deg, #9845E8 -1.72%, #33D2FF 54.05%, #DD5789 99.78%);
   background-clip: text;
   -webkit-background-clip: text;
@@ -55,12 +66,11 @@ body {
   font-weight: 600;
 }
 
-#introduction{
-  width: 75%;
-}
-
-#stack{
-  width: 50%;
+.grad-text2{
+  background: linear-gradient(45deg, #8E24AA, #6200EA, #4A148C);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 
 #project-cont {

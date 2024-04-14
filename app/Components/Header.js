@@ -12,6 +12,11 @@ const Header = () => {
           <Link className='hover:scale-105' href='/Experiences'>Experience</Link>
           <Link className='hover:scale-105' href='/Contact'>Contact</Link>
         </div>
+        <div id='ham-menu'>
+          <button>
+          <img className='hover:scale-105' id='menu-svg' src='menu.svg'/>
+          </button>
+        </div>
         <div id='nav-links-mob' className='p-5 rounded-2xl backdrop-blur-3xl'>
           <Link className='n-li block mb-2 hover:scale-105' href="/">Home</Link>
           <Link className='n-li block mb-2 hover:scale-105' href='/Projects'>Projects</Link>

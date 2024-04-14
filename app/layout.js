@@ -12,9 +12,6 @@ export default function RootLayout({ children }) {
         <Separator />
         {children}
         <Separator />
-        <Separator />
-        <Separator />
-        <Separator />
         <Footer />
       </body>
     </html>

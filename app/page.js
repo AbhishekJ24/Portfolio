@@ -1,17 +1,30 @@
+"use client"
 import React from 'react';
+import { TypeAnimation } from 'react-type-animation';
 
 const Page = () => {
   return (
     <>
       <div className='flex justify-center'>
-        <div id='introduction' className='text-justify w-full max-w-xl'>
-          <div className='font-semibold text-3xl m'>
+        <div className='justify-center w-6/12'>
+          <div className='font-semibold text-2xl'>
             <span>Hey, I'm</span>
+          <div className='grad-text1 text-8xl'>
+            <span className='grad-text1 text-8xl'>
+              Abhishek Joshi
+            </span>
           </div>
-          <div className=''>
-            <span id='name'>Abhishek Joshi</span>
+
           </div>
-          <div className='text-xl' id='about'>
+            <TypeAnimation id='name' className='grad-text2 text-5xl' sequence={[
+              'Passionate about Coding',
+              250,
+              'Creating Memorable Designs',
+              250,
+              'Building Future Solutions',
+              250
+            ]} />
+          <div className='text-xl mt-5'>
             <p>Currently in my pre-final year of my bachelor's degree. Always eager to deepen my technical
               knowledge and skills. Honed proficiency in Java, Python and MERN stack while embracing problem-solving
               abilities vital to computer science.
@@ -28,16 +41,19 @@ const Page = () => {
           </div>
         </div>
       </div>
-      <div className='mt-10 m-2 flex flex-wrap justify-center gap-8 items-center'>
-        <img className='h-16 w-auto rounded-lg' src='java.svg' />
-        <img className='h-16 w-auto rounded-lg' src='python.svg' />
-        <img className='h-16 w-auto rounded-lg' src='sklearn.svg' />
-        <img className='h-16 w-auto rounded-lg' src='pytorch.svg' />
-        <img className='h-16 w-auto rounded-lg' src='javascript.svg' />
-        <img className='h-16 w-auto rounded-lg' src='tailwind.svg' />
-        <img className='h-16 w-auto rounded-lg' src='react.svg' />
-        <img className='h-16 w-auto rounded-lg invert' src='next.svg' />
-        <img className='h-16 w-auto rounded-lg invert' src='express.svg' />
+      <div className='flex justify-center'>
+        <div className='w-1/2 mt-10 m-2 flex flex-wrap justify-center gap-8 items-center'>
+          <img className='h-24 rounded-lg' src='java.svg' />
+          <img className='h-24 rounded-lg' src='python.svg' />
+          <img className='h-16 rounded-lg' src='sklearn.svg' />
+          <img className='h-24 rounded-lg' src='pytorch.svg' />
+          <img className='h-24 rounded-lg' src='javascript.svg' />
+          <img className='h-16 rounded-lg' src='tailwind.svg' />
+          <img className='h-28 rounded-lg' src='react.svg' />
+          <img className='h-24 rounded-lg invert' src='next.svg' />
+          <img className='h-20 rounded-lg invert' src='express.svg' />
+          <img className='h-24 rounded-lg' src='postman.svg' />
+        </div>
       </div>
     </>
   )
