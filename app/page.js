@@ -6,18 +6,14 @@ const Page = () => {
   return (
     <>
       <div className='flex justify-center'>
-        <div className='w-3/4'>
-          <div className='font-semibold text-2xl mb-5'>
+        <div className='w-3/5'>
+          <div id="intro" className='font-semibold'>
             <span>Hey, I'm</span>
           </div>
-          <div>
-
-          <TypeAnimation className='grad-text text-8xl' sequence={[
-            'Abhishek Joshi',
-            100,
-          ]} />
+          <div id="name" className='grad-text'>
+            <TypeAnimation sequence={['Abhishek Joshi', 100]} />
           </div>
-          <div className='text-lg mt-5 text-justify'>
+          <div id="about" className='text-justify'>
             <p>Currently in my pre-final year of my bachelor's degree. Always eager to deepen my technical
               knowledge and skills. Honed proficiency in Java, Python and MERN stack while embracing problem-solving
               abilities vital to computer science.
@@ -35,17 +31,17 @@ const Page = () => {
         </div>
       </div>
       <div className='flex justify-center'>
-        <div className='w-1/2 mt-10 m-2 flex flex-wrap justify-center gap-8 items-center'>
-          <img className='h-24 rounded-lg' src='java.svg' />
-          <img className='h-24 rounded-lg' src='python.svg' />
-          <img className='h-16 rounded-lg' src='sklearn.svg' />
-          <img className='h-24 rounded-lg' src='pytorch.svg' />
-          <img className='h-24 rounded-lg' src='javascript.svg' />
-          <img className='h-16 rounded-lg' src='tailwind.svg' />
-          <img className='h-28 rounded-lg' src='react.svg' />
-          <img className='h-24 rounded-lg invert' src='next.svg' />
-          <img className='h-20 rounded-lg invert' src='express.svg' />
-          <img className='h-24 rounded-lg' src='postman.svg' />
+        <div id="stack" className='w-1/2 mt-10 m-2 flex flex-wrap justify-center gap-8 items-center'>
+          <img className='' src='java.svg' />
+          <img className='' src='python.svg' />
+          <img className='' src='sklearn.svg' />
+          <img className='' src='pytorch.svg' />
+          <img className='' src='javascript.svg' />
+          <img className='' src='tailwind.svg' />
+          <img className='' src='react.svg' />
+          <img className='invert' src='next.svg' />
+          <img className='invert' src='express.svg' />
+          <img className='' src='postman.svg' />
         </div>
       </div>
     </>

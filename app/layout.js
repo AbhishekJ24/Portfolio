@@ -1,4 +1,4 @@
-"use client"
+import React from 'react';
 import "../app/globals.css";
 import Header from '@/app/Components/Header'
 import Footer from '@/app/Components/Footer'
@@ -11,6 +11,8 @@ export default function RootLayout({ children }) {
         <Header />
         <Separator />
         {children}
+        <Separator />
+        <Separator />
         <Separator />
         <Footer />
       </body>
