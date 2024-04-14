@@ -11,7 +11,7 @@ const Page = () => {
             <span>Hey, I'm</span>
           </div>
           <div id="name" className='grad-text'>
-            <TypeAnimation sequence={['Abhishek Joshi', 100]} />
+            <TypeAnimation sequence={['Abhishek Joshi', 300]} />
           </div>
           <div id="about" className='text-justify'>
             <p>Currently in my pre-final year of my bachelor's degree. Always eager to deepen my technical
