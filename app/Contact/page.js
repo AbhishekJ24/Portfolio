@@ -7,19 +7,33 @@ import SendIcon from "@mui/icons-material/SendOutlined";
 import { TypeAnimation } from 'react-type-animation';
 import Alert from '@mui/material/Alert';
 import CheckIcon from '@mui/icons-material/Check';
+import emailjs from 'emailjs-com';
 
 const formVariants = {
   hidden: { opacity: 0, y: -20 },
   visible: { opacity: 1, y: 0, transition: { duration: 0.5, ease: 'easeInOut' } },
 };
 
-
 const Contact = () => {
   const [showAlert, setShowAlert] = React.useState(false);
 
   const handleFormSubmit = (event) => {
     event.preventDefault();
-    setShowAlert(true);
+    const serviceID = 'service_h8d3jw1';
+    const templateID = 'template_j4igfal';
+    const templateParams = {
+      name: event.target[0].value, // Assuming the first input is for the name
+      email: event.target[1].value, // Assuming the second input is for the email
+      message: event.target[2].value, // Assuming the third input is for the message
+    };
+    emailjs.send(serviceID, templateID, templateParams)
+      .then((response) => {
+        console.log('SUCCESS!', response.status, response.text);
+        setShowAlert(true);
+      })
+      .catch((error) => {
+        console.log('FAILED...', error);
+      });
   };
 
   return (
