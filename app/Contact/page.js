@@ -13,6 +13,7 @@ const formVariants = {
   visible: { opacity: 1, y: 0, transition: { duration: 0.5, ease: 'easeInOut' } },
 };
 
+
 const Contact = () => {
   const [showAlert, setShowAlert] = React.useState(false);
 
@@ -23,7 +24,7 @@ const Contact = () => {
 
   return (
     <motion.div
-      className="flex justify-center "
+      className="flex justify-center"
       variants={formVariants}
       initial="hidden"
       animate="visible"
@@ -37,10 +38,9 @@ const Contact = () => {
             label="Your Superhero Name"
             variant="outlined"
             size="small"
-            InputProps={{ className: 'inp-box' }}
-            InputLabelProps={{ className: 'text-white' }}
+            InputProps={{ className: 'inp-box', style: { color: 'white' } }}
             placeholder="Enter your superhero name"
-            
+            InputLabelProps={{ style: { color: 'gray' } }}
           />
           <TextField
             required
@@ -48,9 +48,9 @@ const Contact = () => {
             label="Your Secret Email"
             variant="outlined"
             size="small"
-            InputProps={{ className: 'inp-box' }}
-            InputLabelProps={{ className: 'text-white' }}
+            InputProps={{ className: 'inp-box', style: { color: 'white' } }}
             placeholder="Keep it secret, keep it safe!"
+            InputLabelProps={{ style: { color: 'gray' } }}
           />
           <TextField
             required
@@ -60,9 +60,9 @@ const Contact = () => {
             label="Your Epic Message"
             variant="outlined"
             size="small"
-            InputProps={{ className: 'inp-box' }}
-            InputLabelProps={{ className: 'text-white' }}
+            InputProps={{ className: 'inp-box', style: { color: 'white' } }}
             placeholder="Tell me your epic adventure!"
+            InputLabelProps={{ style: { color: 'gray' } }}
           />
           <Button type="submit" variant="outlined" endIcon={<SendIcon />}>
             Summon the Power
@@ -70,7 +70,7 @@ const Contact = () => {
         </form>
         {showAlert && (
           <Alert className='flex mt-5' icon={<CheckIcon fontSize="inherit" />} severity="success">
-            Here is a gentle confirmation that your action was successful.
+            Thanks for summoning thy powers fruitfully!!
           </Alert>
         )}
       </div>
