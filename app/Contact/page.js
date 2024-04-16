@@ -19,6 +19,7 @@ const Contact = () => {
 
   const handleFormSubmit = (event) => {
     event.preventDefault();
+    setShowAlert(true);
     const serviceID = 'service_h8d3jw1';
     const templateID = 'template_j4igfal';
     const templateParams = {
@@ -26,10 +27,10 @@ const Contact = () => {
       email: event.target[1].value, // Assuming the second input is for the email
       message: event.target[2].value, // Assuming the third input is for the message
     };
-    emailjs.send(serviceID, templateID, templateParams)
+    const apiKey = 'onR9QGol5WfgHFG5R';
+    emailjs.send(serviceID, templateID, templateParams, apiKey)
       .then((response) => {
         console.log('SUCCESS!', response.status, response.text);
-        setShowAlert(true);
       })
       .catch((error) => {
         console.log('FAILED...', error);
