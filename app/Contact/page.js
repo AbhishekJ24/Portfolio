@@ -1,5 +1,6 @@
 "use client"
 import React from 'react';
+import { useState } from 'react';
 import { motion } from 'framer-motion';
 import TextField from '@mui/material/TextField';
 import Button from '@mui/material/Button';
@@ -16,19 +17,36 @@ const formVariants = {
 
 const Contact = () => {
   const [showAlert, setShowAlert] = React.useState(false);
-
+  const [formData, setFormData] = useState({
+    name: '',
+    email: '',
+    message: ''
+  });
+  const handleChange = (event) => {
+    const { name, value } = event.target;
+    setFormData((prevFormData) => ({
+      ...prevFormData,
+      [name]: value
+    }));
+  };
   const handleFormSubmit = (event) => {
     event.preventDefault();
-    setShowAlert(true);
     const serviceID = 'service_h8d3jw1';
     const templateID = 'template_j4igfal';
-    const templateParams = {
-      name: event.target[0].value, // Assuming the first input is for the name
-      email: event.target[1].value, // Assuming the second input is for the email
-      message: event.target[2].value, // Assuming the third input is for the message
-    };
-    const apiKey = 'onR9QGol5WfgHFG5R';
-    emailjs.send(serviceID, templateID, templateParams, apiKey)
+    const publicKey = 'onR9QGol5WfgHFG5R';
+    setShowAlert(true);
+        setFormData({
+          name: '',
+          email: '',
+          message: ''
+        });
+    emailjs.send(serviceID, templateID, {
+      from_name: formData.name,
+      to_name: "Abhishek Joshi",
+      from_email: formData.email,
+      to_email: 'abhishekjoshiofficial24@gmail.com',
+      message: formData.message,
+    },publicKey)
       .then((response) => {
         console.log('SUCCESS!', response.status, response.text);
       })
@@ -48,6 +66,7 @@ const Contact = () => {
         <h2 className="msg-box-h font-bold mb-6"> <TypeAnimation sequence={['Send Me a Message', 250]} /></h2>
         <form id="messageForm" className="space-y-4" onSubmit={handleFormSubmit}>
           <TextField
+            id='name'
             required
             fullWidth
             label="Your Superhero Name"
@@ -56,8 +75,12 @@ const Contact = () => {
             InputProps={{ className: 'inp-box', style: { color: 'white' } }}
             placeholder="Enter your superhero name"
             InputLabelProps={{ style: { color: 'gray' } }}
+            name="name"
+            value={formData.name}
+            onChange={handleChange}
           />
           <TextField
+            id="email"
             required
             fullWidth
             label="Your Secret Email"
@@ -66,8 +89,12 @@ const Contact = () => {
             InputProps={{ className: 'inp-box', style: { color: 'white' } }}
             placeholder="Keep it secret, keep it safe!"
             InputLabelProps={{ style: { color: 'gray' } }}
+            name="email"
+            value={formData.email}
+            onChange={handleChange}
           />
           <TextField
+            id="message"
             required
             fullWidth
             multiline
@@ -78,6 +105,9 @@ const Contact = () => {
             InputProps={{ className: 'inp-box', style: { color: 'white' } }}
             placeholder="Tell me your epic adventure!"
             InputLabelProps={{ style: { color: 'gray' } }}
+            name="message"
+            value={formData.message}
+            onChange={handleChange}
           />
           <Button type="submit" variant="outlined" endIcon={<SendIcon />}>
             Summon the Power
