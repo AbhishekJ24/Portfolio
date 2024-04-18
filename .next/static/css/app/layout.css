@@ -605,8 +605,8 @@ video {
 .gap-2{
   gap: 0.5rem;
 }
-.gap-8{
-  gap: 2rem;
+.gap-3{
+  gap: 0.75rem;
 }
 .space-y-4 > :not([hidden]) ~ :not([hidden]){
   --tw-space-y-reverse: 0;
@@ -777,19 +777,11 @@ video {
   #nav-links-lap {
     display: none;
   }
-
-  #stack img {
-    height: 55px;
-  }
 }
 
 @media (min-width: 692px) {
   #ham-menu {
     display: none;
-  }
-
-  #stack img {
-    height: 80px;
   }
 }
 
@@ -808,11 +800,6 @@ body {
       transparent,
       rgb(var(--background-end-rgb))) rgb(var(--background-start-rgb));
 }
-
-img {
-  max-width: 100%;
-}
-
 
 #nav-links-mob {
   display: none;
@@ -844,8 +831,6 @@ img {
 .ind-btns:hover {
   background-color: #6f41f8;
 }
-
-
 
 .green-text-gradient {
   background: #11998e;

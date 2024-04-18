@@ -32,19 +32,11 @@
   #nav-links-lap {
     display: none;
   }
-
-  #stack img {
-    height: 55px;
-  }
 }
 
 @media (min-width: 692px) {
   #ham-menu {
     display: none;
-  }
-
-  #stack img {
-    height: 80px;
   }
 }
 
@@ -69,11 +61,6 @@ body {
     text-wrap: balance;
   }
 }
-
-img {
-  max-width: 100%;
-}
-
 
 #nav-links-mob {
   display: none;
@@ -105,8 +92,6 @@ img {
 .ind-btns:hover {
   background-color: #6f41f8;
 }
-
-
 
 .green-text-gradient {
   background: #11998e;

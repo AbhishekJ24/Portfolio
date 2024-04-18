@@ -31,17 +31,20 @@ const Page = () => {
         </div>
       </div>
       <div className='flex justify-center'>
-        <div id="stack" className='w-1/2 mt-10 m-2 flex flex-wrap justify-center gap-8 items-center'>
-          <img className='' src='java.svg' />
-          <img className='' src='python.svg' />
-          <img className='' src='sklearn.svg' />
-          <img className='' src='pytorch.svg' />
-          <img className='' src='javascript.svg' />
-          <img className='' src='tailwind.svg' />
-          <img className='' src='react.svg' />
-          <img className='invert' src='next.svg' />
-          <img className='invert' src='express.svg' />
-          <img className='' src='postman.svg' />
+        <div id="stack" className='w-1/2 mt-10 m-2 flex flex-wrap justify-center gap-3'>
+          <img className='' src='python.png'/>
+          <img className='' src='pytorch.svg'/>
+          <img className='' src='java.svg'/>
+          <img className='' src='cpp.png'/>
+          <img className='' src='tailwind.png'/>
+          <img className='' src='reactjs.png'/>
+          <img className='' src='express.png'/>
+          <img className=' invert' src='next.svg'/>
+          <img className='' src='nodejs.png'/>
+          <img className='' src='postman.svg'/>
+          <img className='' src='git.png'/>
+          <img className='' src='docker.png'/>
+          <img className='' src='figma.png'/>
         </div>
       </div>
     </>
