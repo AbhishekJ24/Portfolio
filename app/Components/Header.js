@@ -12,7 +12,7 @@ const Header = () => {
           <Link className='hover:scale-105' href='/Experiences'>Experience</Link>
           <Link className='hover:scale-105' href='/Contact'>Contact</Link>
         </div>
-        <div id='ham-menu'>
+        <div className='md:hidden'>
           <button>
           <img className='h-12 hover:scale-105' id='menu-svg' src='menu.svg'/>
           </button>

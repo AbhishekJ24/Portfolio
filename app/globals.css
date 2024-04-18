@@ -17,31 +17,13 @@
 }
 
 @media (max-width: 692px) {
-  #intro {
-    font-size: 18px;
-  }
-
-  #name {
-    font-size: 50px;
-  }
-
-  #about {
-    font-size: 13px;
-  }
-
   #nav-links-lap {
     display: none;
   }
 }
 
-@media (min-width: 692px) {
-  #ham-menu {
-    display: none;
-  }
-}
-
 .grad-text {
-  font-size: 100px;
+  font-size: 4rem;
   background: linear-gradient(90deg, #9845E8 -1.72%, #33D2FF 54.05%, #DD5789 99.78%);
   background-clip: text;
   -webkit-background-clip: text;
@@ -118,12 +100,12 @@ body {
   color: #865dff;
 }
 
-.inp-box{
+.inp-box {
   background-color: #1a1926;
   color: white;
 }
 
-.msg-box-h{
+.msg-box-h {
   font-size: xx-large;
   background: linear-gradient(90deg, #9845E8 -1.72%, #33D2FF 54.05%, #DD5789 99.78%);
   background-clip: text;
