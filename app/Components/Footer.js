@@ -17,7 +17,7 @@ const Footer = () => {
   return (
     <>
       {showFooter && (
-        <footer className='text-center fixed bottom-0 left-0 w-full p-10 h-10 backdrop-blur-3xl'>
+        <footer className='text-center w-full p-10 h-10'>
           <p>&copy; 2024 Abhishek Joshi</p>
         </footer>
       )}

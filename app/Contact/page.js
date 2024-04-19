@@ -4,7 +4,7 @@ import { useState } from 'react';
 import { motion } from 'framer-motion';
 import TextField from '@mui/material/TextField';
 import Button from '@mui/material/Button';
-import SendIcon from "@mui/icons-material/SendOutlined";
+import SendIcon from "@mui/icons-material/SendSharp";
 import { TypeAnimation } from 'react-type-animation';
 import Alert from '@mui/material/Alert';
 import CheckIcon from '@mui/icons-material/Check';
@@ -35,18 +35,18 @@ const Contact = () => {
     const templateID = 'template_j4igfal';
     const publicKey = 'onR9QGol5WfgHFG5R';
     setShowAlert(true);
-        setFormData({
-          name: '',
-          email: '',
-          message: ''
-        });
+    setFormData({
+      name: '',
+      email: '',
+      message: ''
+    });
     emailjs.send(serviceID, templateID, {
       from_name: formData.name,
       to_name: "Abhishek Joshi",
       from_email: formData.email,
       to_email: 'abhishekjoshiofficial24@gmail.com',
       message: formData.message,
-    },publicKey)
+    }, publicKey)
       .then((response) => {
         console.log('SUCCESS!', response.status, response.text);
       })
@@ -62,18 +62,18 @@ const Contact = () => {
       initial="hidden"
       animate="visible"
     >
-      <div className="hover:border-gray-700 border-2 backdrop-blur-2xl bg-opacity-80 shadow-lg rounded-xl px-8 py-6 pb-36 w-10/12 max-w-lg hover:shadow-2xl transition duration-300 text-white">
-        <h2 className="msg-box-h font-bold mb-6"> <TypeAnimation sequence={['Send Me a Message', 250]} /></h2>
+      <div id="contact-box" className="shadow-2xl hover:shadow-xl rounded-xl px-8 py-6 pb-28 w-10/12 max-w-lg transition duration-300 text-white">
+        <TypeAnimation className='msg-box-h' sequence={['Get in Touch', 100]} />
         <form id="messageForm" className="space-y-4" onSubmit={handleFormSubmit}>
           <TextField
             id='name'
             required
             fullWidth
-            label="Your Superhero Name"
+            label="Name"
             variant="outlined"
             size="small"
             InputProps={{ className: 'inp-box', style: { color: 'white' } }}
-            placeholder="Enter your superhero name"
+            placeholder="Enter your name"
             InputLabelProps={{ style: { color: 'gray' } }}
             name="name"
             value={formData.name}
@@ -83,11 +83,11 @@ const Contact = () => {
             id="email"
             required
             fullWidth
-            label="Your Secret Email"
+            label="Email"
             variant="outlined"
             size="small"
             InputProps={{ className: 'inp-box', style: { color: 'white' } }}
-            placeholder="Keep it secret, keep it safe!"
+            placeholder="Enter your email"
             InputLabelProps={{ style: { color: 'gray' } }}
             name="email"
             value={formData.email}
@@ -99,23 +99,24 @@ const Contact = () => {
             fullWidth
             multiline
             rows={4}
-            label="Your Epic Message"
+            label="Message"
             variant="outlined"
             size="small"
             InputProps={{ className: 'inp-box', style: { color: 'white' } }}
-            placeholder="Tell me your epic adventure!"
+            placeholder="Enter your message"
             InputLabelProps={{ style: { color: 'gray' } }}
             name="message"
             value={formData.message}
             onChange={handleChange}
           />
-          <Button type="submit" variant="outlined" endIcon={<SendIcon />}>
-            Summon the Power
+          <Button className='flex items-center gap-3 justify-center' type="submit" variant="outlined">
+            Submit Request
+            <SendIcon />
           </Button>
         </form>
         {showAlert && (
           <Alert className='flex mt-5' icon={<CheckIcon fontSize="inherit" />} severity="success">
-            Thanks for summoning thy powers fruitfully!!
+            Thanks for contacting me!!
           </Alert>
         )}
       </div>

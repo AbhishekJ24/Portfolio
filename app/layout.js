@@ -8,12 +8,24 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <body>
-        <Header />
-        <Separator />
-        {children}
-        <Separator />
-        <Separator />
-        <Separator />
+        <div className="area absolute -z-50" >
+          <Header />
+          <Separator />
+          {children}
+          <ul class="circles relative -z-40">
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+          </ul>
+          <Separator />
+        </div >
         <Footer />
       </body>
     </html>
