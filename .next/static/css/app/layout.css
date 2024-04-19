@@ -688,14 +688,6 @@ video {
   font-size: 0.75rem;
   line-height: 1rem;
 }
-.text-2xl {
-  font-size: 1.5rem;
-  line-height: 2rem;
-}
-.text-xl {
-  font-size: 1.25rem;
-  line-height: 1.75rem;
-}
 .font-bold {
   font-weight: 700;
 }
@@ -777,7 +769,7 @@ video {
 
 .area {
   background: hsl(236, 71%, 8%);
-  background: -webkit-linear-gradient(to left, #4f528e, #4e54c8);
+  background: -webkit-linear-gradient(to left, hsl(236, 27%, 35%), hsl(236, 71%, 8%));
   width: 100vw;
   height: 100vh;
   overflow-y: scroll;
