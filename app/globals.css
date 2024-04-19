@@ -16,7 +16,7 @@
 
 .area {
   background: hsl(236, 71%, 8%);
-  background: -webkit-linear-gradient(to left, hsl(236, 27%, 35%), hsl(236, 71%, 8%));
+  background: -webkit-linear-gradient(to left, hsl(236, 57%, 28%), hsl(236, 71%, 8%));
   width: 100vw;
   height: 100vh;
   overflow-y: scroll;
