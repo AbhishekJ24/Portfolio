@@ -15,8 +15,8 @@
 }
 
 .area {
-  background: #4e54c8;
-  background: -webkit-linear-gradient(to left, #4f528e, #4e54c8);
+  background: #15184d;
+  background: -webkit-linear-gradient(to left, #4f528e, #15184d);
   width: 100vw;
   height: 100vh;
   overflow-y: scroll;
