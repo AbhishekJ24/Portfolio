@@ -14,6 +14,12 @@
   padding: 0;
 }
 
+#nav-links-mob{
+  background-color: #4f528e;
+  backdrop-filter: blur(200px);
+  transform: scale3d();
+}
+
 .area {
   background: #15184d;
   background: -webkit-linear-gradient(to left, #4f528e, #15184d);
@@ -170,10 +176,6 @@ body {
   }
 }
 
-#nav-links-mob {
-  display: none;
-}
-
 #project-cont {
   width: 1200px;
 }
@@ -222,12 +224,7 @@ body {
 }
 
 .comp {
-  color: #ff5733;
-}
-
-.inp-box {
-  background-color: #1a1926;
-  color: white;
+  color: whitesmoke ;
 }
 
 .msg-box-h {
