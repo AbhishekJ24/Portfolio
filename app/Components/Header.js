@@ -23,11 +23,11 @@ const Header = () => {
         </div>
         <div className='md:hidden'>
           <button onClick={toggleMenu} className='focus:outline-none'>
-            <img className='h-10 invert' src={menuIcon} alt='Menu' />
+            <img className='h-12 invert' src={menuIcon} alt='Menu' />
           </button>
         </div>
         {isMenuOpen && (
-          <div id='nav-links-mob' className='absolute right-12 top-12 w-28 h-40 p-5 rounded-xl shadow-lg z-10'>
+          <div id='nav-links-mob' className='absolute right-14 top-14 w-28 h-40 p-5 rounded-xl shadow-lg z-10'>
             <Link className='block mb-2' href="/">Home</Link>
             <Link className='block mb-2' href='/Projects'>Projects</Link>
             <Link className='block mb-2' href='/Experiences'>Experience</Link>
