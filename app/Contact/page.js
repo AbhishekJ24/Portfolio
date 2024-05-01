@@ -3,9 +3,6 @@ import React from 'react';
 import { useState } from 'react';
 import { motion } from 'framer-motion';
 import TextField from '@mui/material/TextField';
-import Button from '@mui/material/Button';
-import SendIcon from "@mui/icons-material/SendSharp";
-import { TypeAnimation } from 'react-type-animation';
 import Alert from '@mui/material/Alert';
 import CheckIcon from '@mui/icons-material/Check';
 import emailjs from 'emailjs-com';
@@ -63,7 +60,7 @@ const Contact = () => {
       animate="visible"
     >
       <div id="contact-box" className="shadow-2xl hover:shadow-xl rounded-xl px-8 py-6 pb-28 w-10/12 max-w-lg transition duration-300 text-white">
-        <TypeAnimation className='msg-box-h' sequence={['Get in Touch', 100]} />
+        <h2 className='msg-box-h mb-5'>Get in Touch</h2>
         <form id="messageForm" className="space-y-4" onSubmit={handleFormSubmit}>
           <TextField
             id='name'
@@ -109,10 +106,9 @@ const Contact = () => {
             value={formData.message}
             onChange={handleChange}
           />
-          <Button className='flex items-center gap-3 justify-center' type="submit" variant="outlined">
-            Submit Request
-            <SendIcon />
-          </Button>
+          <button className='contact-submit-btn' type="submit">
+            Send Message
+          </button>
         </form>
         {showAlert && (
           <Alert className='flex mt-5' icon={<CheckIcon fontSize="inherit" />} severity="success">

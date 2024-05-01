@@ -12,7 +12,7 @@ const Projects = () => {
           <Project
             imgpath="hybridmodel.png"
             title="EvoCloudMineX: Unleashing Temporal Data Insights"
-            stack1="#Python"
+            stack1="#PYTHON"
             stack2="#HTML"
             stack3="#CSS"
             stack4="#FLASK"
@@ -20,12 +20,12 @@ const Projects = () => {
             projlink="/" />
           <Project
             imgpath="summaease.png"
-            title="SummaEase: Text and Speech Summarization using BERT LLM"
-            stack1="#Python"
-            stack2="#HTML"
-            stack3="#CSS"
-            stack4="#FLASK"
-            stack5="#BART"
+            title="SummaEase: Text and Speech Summarization using LLMs"
+            stack1="#PYTHON"
+            stack2="#STREAMLIT"
+            stack3="#NLTK"
+            stack4="#BART"
+            stack5="#T5"
             githublink="https://github.com/AbhishekJ24/SummaEase-Text-And-Speech-Summarizer-using-LLM.git"
             projlink="/" />
           <Project

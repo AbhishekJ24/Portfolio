@@ -10,7 +10,7 @@ const Page = () => {
           <span className='font-semibold text-lg'>Hey, I'm</span>
         </div>
         <div className='grad-text'>
-          <TypeAnimation sequence={['Abhishek Joshi', 200, 'Software Engineer', 200, 'Web Developer', 200, 'Abhishek Joshi', 200]} />
+          <TypeAnimation sequence={['Abhishek Joshi', 350, 'Software Engineer', 350, 'Web Developer', 350, 'Abhishek Joshi', 350]} />
         </div>
         <div className='text-justify mt-2'>
           <p>

@@ -4,8 +4,6 @@
 
 :root {
   --c1: rgba(255, 255, 255, 0.2);
-  --background-start-rgb: 0, 0, 0;
-  --background-end-rgb: 0, 0, 0;
   --foreground-rgb: 255, 255, 255;
 }
 
@@ -18,19 +16,6 @@
   background-color: #4f528e;
   backdrop-filter: blur(200px);
   transform-origin: top right;
-  animation: expandMenu 0.3s ease-in-out 0.1s forwards;
-}
-
-@keyframes expandMenu {
-  0% {
-    opacity: 0;
-    transform: scale(0.8);
-  }
-
-  100% {
-    opacity: 1;
-    transform: scale(1);
-  }
 }
 
 .area {
@@ -38,8 +23,7 @@
   /* Ensure positioning context */
   height: 100vh;
   /* Full viewport height */
-  background: #15184d;
-  background: -webkit-linear-gradient(to left, #4f528e, #15184d);
+  background-color: #15184d;
 }
 
 .circles {
@@ -258,4 +242,23 @@ body {
 #contact-box {
   backdrop-filter: blur(200px);
   background-color: rgba(223, 211, 211, 0.088);
+}
+
+.contact-submit-btn {
+  display: block;
+  box-sizing: border-box;
+  padding: 8px;
+  width: 75%;
+  max-width: 175px;
+  background: gray;
+  background: rgba(255, 255, 255, 0.2);
+  border-radius: 8px;
+  color: #B3CDD1;
+  text-align: center;
+  text-decoration: none;
+  transition: all 0.2s ease-out;
+}
+
+.contact-submit-btn:hover{
+  transform: scale(1.02);
 }

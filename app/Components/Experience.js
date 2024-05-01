@@ -5,7 +5,7 @@ const Experience = ({ company, position, duration, imgpath }) => {
   return (
     <motion.div initial={{ x: '-100vw' }}
       animate={{ x: 0 }}
-      transition={{ type: 'spring', stiffness: 120, damping: 10, duration: 4000, ease: 'easeInOut' }} className="exp-card max-w-md mx-auto rounded-xl shadow-md overflow-hidden md:max-w-2xl mt-8">
+      transition={{ type: 'spring', stiffness: 120, damping: 10, duration: 4000, ease: 'easeInOut' }} className="exp-card mx-auto rounded-xl shadow-md overflow-hidden md:max-w-2xl mt-8 w-3/4">
       <div className="md:flex">
         <div className="md:flex-shrink-0">
           <img className="h-48 w-full object-cover md:h-full md:w-48" src={imgpath} alt="Work Experience" />
